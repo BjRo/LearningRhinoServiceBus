@@ -8,8 +8,8 @@
     <ProjectGuid>{FDE2BC8E-55D5-4BC1-A5D3-CCAB0F3595BA}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Consumer</RootNamespace>
-    <AssemblyName>Consumer</AssemblyName>
+    <RootNamespace>Backend</RootNamespace>
+    <AssemblyName>Backend</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
