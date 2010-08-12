@@ -5,11 +5,11 @@
     <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D7CD52AF-E30C-42C1-BC67-87253D5DA673}</ProjectGuid>
+    <ProjectGuid>{FDE2BC8E-55D5-4BC1-A5D3-CCAB0F3595BA}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Sender</RootNamespace>
-    <AssemblyName>Sender</AssemblyName>
+    <RootNamespace>Backend</RootNamespace>
+    <AssemblyName>Backend</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <TargetFrameworkProfile>
     </TargetFrameworkProfile>
@@ -71,9 +71,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BackendBootStrapper.cs" />
+    <Compile Include="HelloWorldConsumer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SenderBoottrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

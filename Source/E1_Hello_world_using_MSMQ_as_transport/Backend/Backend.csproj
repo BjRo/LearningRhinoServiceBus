@@ -71,7 +71,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsumerBootStrapper.cs" />
+    <Compile Include="BackendBootStrapper.cs" />
     <Compile Include="HelloWorldConsumer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

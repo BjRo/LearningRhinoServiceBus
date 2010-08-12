@@ -2,7 +2,7 @@ using System;
 using Messages;
 using Rhino.ServiceBus;
 
-namespace Consumer
+namespace Backend
 {
     public class HelloWorldConsumer : ConsumerOf<HelloWorldMessage>
     {

@@ -2,17 +2,15 @@
 using Messages;
 using Rhino.ServiceBus;
 using Rhino.ServiceBus.Hosting;
-using Rhino.ServiceBus.Msmq;
-using Utils;
 
-namespace Sender
+namespace Client
 {
     class Program
     {
         static void Main(string[] args)
         {
             var host = new DefaultHost();
-            host.Start<SenderBootStrapper>();
+            host.Start<ClientBootStrapper>();
 
             var bus = host.Container.Resolve<IServiceBus>();
 

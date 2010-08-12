@@ -3,7 +3,7 @@ using Rhino.ServiceBus.Hosting;
 using Rhino.ServiceBus.Msmq;
 using Utils;
 
-namespace Consumer
+namespace Backend
 {
     class Program
     {
@@ -16,7 +16,7 @@ namespace Consumer
             Console.WriteLine("Starting to listen for incoming messages ...");
 
             var host = new DefaultHost();
-            host.Start<ConsumerBootStrapper>();
+            host.Start<BackendBootStrapper>();
 
             Console.ReadLine(); ;
         }
