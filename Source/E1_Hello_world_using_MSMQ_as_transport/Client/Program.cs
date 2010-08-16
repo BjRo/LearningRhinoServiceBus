@@ -2,6 +2,8 @@
 using Messages;
 using Rhino.ServiceBus;
 using Rhino.ServiceBus.Hosting;
+using Rhino.ServiceBus.Msmq;
+using Utils;
 
 namespace Client
 {
@@ -9,6 +11,8 @@ namespace Client
     {
         static void Main(string[] args)
         {
+            PrepareQueues.Prepare("msmq://localhost/LearningRhinoESB.E1.Client", QueueType.Standard);
+
             var host = new DefaultHost();
             host.Start<ClientBootStrapper>();
 
@@ -16,7 +20,6 @@ namespace Client
 
             Console.WriteLine("Hit enter to send message");
             Console.ReadLine();
-            Console.WriteLine("Sending message . . . ");
 
             bus.Send(new HelloWorldMessage
             {
