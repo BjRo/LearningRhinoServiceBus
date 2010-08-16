@@ -8,7 +8,6 @@ namespace Backend
     {
         public void Consume(HelloWorldMessage message)
         {
-            Console.WriteLine("WOW, recieved  a message! Message text is: ");
             Console.WriteLine(message.Content);
         }
     }

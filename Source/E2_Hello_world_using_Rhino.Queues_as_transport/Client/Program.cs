@@ -13,6 +13,9 @@ namespace Client
             if (Directory.Exists("client.esent"))
                 Directory.Delete("client.esent", true);
 
+            if (Directory.Exists("client_subscriptions.esent"))
+                Directory.Delete("client_subscriptions.esent", true);
+
             var host = new DefaultHost();
             host.Start<ClientBootStrapper>();
 
