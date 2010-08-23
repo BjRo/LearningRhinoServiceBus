@@ -19,14 +19,19 @@ namespace Customer
             var host = new DefaultHost();
             host.Start<CustomerBootStrapper>();
 
-            Console.WriteLine("Ayende: Visiting Starbucks ...");
-          
+            Console.WriteLine("Customer is visiting Starbucks ...");
+            Console.WriteLine("Hit enter for buying a hot chocolate ...");
+
+
+            //Give the other services a bit air to initialize.
+            Console.ReadLine();
+
             var bus = host.Container.Resolve<IServiceBus>();
 
             var customer = new CustomerController(bus)
             {
                 Drink = "Hot Chocolate",
-                Name = "Ayende",
+                Name = "Starbucks Lover",
                 Size = DrinkSize.Venti
             };
 

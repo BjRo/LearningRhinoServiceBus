@@ -34,29 +34,28 @@
     <StartupObject />
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Castle.Core">
-      <HintPath>..\..\..\Lib\Castle.Core.dll</HintPath>
+    <Reference Include="Castle.Core, Version=2.5.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL" />
+    <Reference Include="Castle.Windsor, Version=2.5.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL" />
+    <Reference Include="Esent.Interop, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b93b4ad6c4b80595, processorArchitecture=MSIL" />
+    <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL" />
+    <Reference Include="Rhino.DistributedHashTable">
+      <HintPath>..\..\..\Lib\Rhino.DistributedHashTable.dll</HintPath>
     </Reference>
-    <Reference Include="Castle.DynamicProxy2">
-      <HintPath>..\..\..\Lib\Castle.DynamicProxy2.dll</HintPath>
+    <Reference Include="Rhino.DistributedHashTable.Client">
+      <HintPath>..\..\..\Lib\Rhino.DistributedHashTable.Client.dll</HintPath>
     </Reference>
-    <Reference Include="Castle.MicroKernel">
-      <HintPath>..\..\..\Lib\Castle.MicroKernel.dll</HintPath>
-    </Reference>
-    <Reference Include="Castle.Windsor">
-      <HintPath>..\..\..\Lib\Castle.Windsor.dll</HintPath>
-    </Reference>
+    <Reference Include="Rhino.PersistentHashTable, Version=1.7.0.0, Culture=neutral, PublicKeyToken=0b3305902db7183f, processorArchitecture=MSIL" />
     <Reference Include="Rhino.Queues, Version=1.2.0.0, Culture=neutral, PublicKeyToken=0b3305902db7183f, processorArchitecture=MSIL" />
-    <Reference Include="Rhino.ServiceBus">
-      <HintPath>..\..\..\Lib\Rhino.ServiceBus.dll</HintPath>
-    </Reference>
+    <Reference Include="Rhino.ServiceBus, Version=1.8.0.0, Culture=neutral, PublicKeyToken=0b3305902db7183f, processorArchitecture=MSIL" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
+    <Reference Include="Wintellect.Threading">
+      <HintPath>..\..\..\Lib\Wintellect.Threading.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CashierBootStrapper.cs" />

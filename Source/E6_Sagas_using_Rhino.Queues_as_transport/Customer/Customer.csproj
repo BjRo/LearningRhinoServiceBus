@@ -38,18 +38,10 @@
     <Reference Include="Castle.Core">
       <HintPath>..\..\..\Lib\Castle.Core.dll</HintPath>
     </Reference>
-    <Reference Include="Castle.DynamicProxy2">
-      <HintPath>..\..\..\Lib\Castle.DynamicProxy2.dll</HintPath>
-    </Reference>
-    <Reference Include="Castle.MicroKernel">
-      <HintPath>..\..\..\Lib\Castle.MicroKernel.dll</HintPath>
-    </Reference>
     <Reference Include="Castle.Windsor">
       <HintPath>..\..\..\Lib\Castle.Windsor.dll</HintPath>
     </Reference>
-    <Reference Include="Esent.Interop">
-      <HintPath>..\..\..\Lib\Esent.Interop.dll</HintPath>
-    </Reference>
+    <Reference Include="Esent.Interop, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b93b4ad6c4b80595, processorArchitecture=MSIL" />
     <Reference Include="log4net">
       <HintPath>..\..\..\Lib\log4net.dll</HintPath>
     </Reference>
