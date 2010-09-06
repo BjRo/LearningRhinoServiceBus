@@ -1,6 +1,6 @@
 ﻿using System;
-using System.IO;
 using Rhino.ServiceBus.Hosting;
+using Utils;
 
 namespace Backend
 {
@@ -8,12 +8,8 @@ namespace Backend
     {
         static void Main(string[] args)
         {
-            if (Directory.Exists("backend.esent"))
-                Directory.Delete("backend.esent", true);
-
-            if (Directory.Exists("backend_subscriptions.esent"))
-                Directory.Delete("backend_subscriptions.esent", true);
-
+            QueueUtil.PrepareQueue("backend");
+            
             Console.WriteLine("Backend: Starting to listen for incoming messages ...");
 
             var host = new DefaultHost();

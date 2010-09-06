@@ -1,8 +1,8 @@
 ﻿using System;
-using System.IO;
 using Messages;
 using Rhino.ServiceBus;
 using Rhino.ServiceBus.Hosting;
+using Utils;
 
 namespace Client
 {
@@ -10,12 +10,8 @@ namespace Client
     {
         static void Main(string[] args)
         {
-            if (Directory.Exists("client.esent"))
-                Directory.Delete("client.esent", true);
-
-            if (Directory.Exists("client_subscriptions.esent"))
-                Directory.Delete("client_subscriptions.esent", true);
-
+            QueueUtil.PrepareQueue("client");
+         
             var host = new DefaultHost();
             host.Start<ClientBootStrapper>();
 

@@ -83,6 +83,10 @@
       <Project>{29CE9774-59E2-4D6F-A341-8FEEC2C9F1AE}</Project>
       <Name>Messages</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{EABE6B24-0A45-49AE-B979-F92C523CED92}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -5,6 +5,7 @@ using Customer;
 using Messages;
 using Rhino.ServiceBus;
 using Rhino.ServiceBus.Hosting;
+using Utils;
 
 namespace DevelopmentEnvironment
 {
@@ -12,6 +13,10 @@ namespace DevelopmentEnvironment
     {
         static void Main(string[] args)
         {
+            QueueUtil.PrepareQueue("cashier");
+            QueueUtil.PrepareQueue("barista");
+            QueueUtil.PrepareQueue("customer");
+
             var cashier = new RemoteAppDomainHost(typeof(CashierBootStrapper))
                 .Configuration("Cashier.config");
             cashier.Start();
