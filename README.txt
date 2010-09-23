@@ -1,0 +1,1 @@
+A set of examples demonstrating important parts of the Rhino.ServiceBus API
