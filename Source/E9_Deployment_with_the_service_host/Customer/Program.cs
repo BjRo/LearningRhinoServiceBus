@@ -1,12 +1,11 @@
 ﻿using System;
-using Customer;
 using Messages;
 using Rhino.ServiceBus;
 using Rhino.ServiceBus.Hosting;
 using Rhino.ServiceBus.Msmq;
 using Utils;
 
-namespace DevelopmentEnvironment
+namespace Customer
 {
     class Program
     {
@@ -25,6 +24,7 @@ namespace DevelopmentEnvironment
             customerHost.Start<CustomerBootStrapper>();
 
             Console.WriteLine("Customer was started");
+            Console.WriteLine("Waiting for order");
             Console.ReadLine();
 
             var bus = customerHost.Container.Resolve<IServiceBus>();

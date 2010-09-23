@@ -1,4 +1,3 @@
-using System;
 using Castle.MicroKernel.Registration;
 using Rhino.ServiceBus.Hosting;
 using Rhino.ServiceBus.Internal;

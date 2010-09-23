@@ -15,7 +15,7 @@ namespace Customer
             var host = new DefaultHost();
             host.Start<CustomerBootStrapper>();
 
-            Console.WriteLine("Customer is visiting Starbucks ...");
+            Console.WriteLine("Ayende is visiting Starbucks ...");
             Console.WriteLine("Hit enter for buying a hot chocolate ...");
 
             //Give the other services a bit air to initialize.
