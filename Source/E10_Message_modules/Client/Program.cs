@@ -11,7 +11,7 @@ namespace Client
     {
         static void Main(string[] args)
         {
-            PrepareQueues.Prepare("msmq://localhost/LearningRhinoESB.E1.Client", QueueType.Standard);
+            PrepareQueues.Prepare("msmq://localhost/LearningRhinoESB.E10.Client", QueueType.Standard);
 
             var host = new DefaultHost();
             host.Start<ClientBootStrapper>();

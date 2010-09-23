@@ -9,7 +9,7 @@ namespace Backend
     {
         static void Main(string[] args)
         {
-            PrepareQueues.Prepare("msmq://localhost/LearningRhinoESB.E11.Backend", QueueType.Standard);
+            PrepareQueues.Prepare("msmq://localhost/LearningRhinoESB.E12.Backend", QueueType.Standard);
 
             Console.WriteLine("Starting to listen for incoming messages ...");
 

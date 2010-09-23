@@ -12,7 +12,7 @@ namespace Client
     {
         static void Main(string[] args)
         {
-            PrepareQueues.Prepare("msmq://localhost/LearningRhinoESB.E11.Client", QueueType.Standard);
+            PrepareQueues.Prepare("msmq://localhost/LearningRhinoESB.E12.Client", QueueType.Standard);
 
             var host = new DefaultHost();
             host.Start<ClientBootStrapper>();
@@ -23,11 +23,11 @@ namespace Client
             Console.ReadLine();
 
 
-            var helloWorldMessages = GetMessagesToSend();
+            var message = GetMessageWithLargeCollection();
 
             try
             {
-                bus.Send(helloWorldMessages);
+                bus.Send(message);
             }
             catch (Exception e)
             {
@@ -37,12 +37,17 @@ namespace Client
             Console.ReadLine();
         }
         
-        private static object[] GetMessagesToSend()
+        private static object GetMessageWithLargeCollection()
         {
-            return Enumerable.Range(0, 257)
-                .Select(i => new HelloWorldMessage { Content = "Hello World " + i })
-                .Cast<object>()
-                .ToArray();
+            var message = new HelloWorldMessage
+            {
+                //256 entries is the max value
+                Content = Enumerable.Range(0, 257)
+                    .Select(i => "Hello World " + i)
+                    .ToList()
+            };
+
+            return message;
         }
     }
 }
