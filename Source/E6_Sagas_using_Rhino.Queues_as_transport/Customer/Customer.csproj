@@ -41,7 +41,9 @@
     <Reference Include="Castle.Windsor">
       <HintPath>..\..\..\Lib\Castle.Windsor.dll</HintPath>
     </Reference>
-    <Reference Include="Esent.Interop, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b93b4ad6c4b80595, processorArchitecture=MSIL" />
+    <Reference Include="Esent.Interop">
+      <HintPath>..\..\..\Lib\Esent.Interop.dll</HintPath>
+    </Reference>
     <Reference Include="log4net">
       <HintPath>..\..\..\Lib\log4net.dll</HintPath>
     </Reference>

@@ -36,7 +36,9 @@
   <ItemGroup>
     <Reference Include="Castle.Core, Version=2.5.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL" />
     <Reference Include="Castle.Windsor, Version=2.5.0.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL" />
-    <Reference Include="Esent.Interop, Version=1.5.0.0, Culture=neutral, PublicKeyToken=b93b4ad6c4b80595, processorArchitecture=MSIL" />
+    <Reference Include="Esent.Interop">
+      <HintPath>..\..\..\Lib\Esent.Interop.dll</HintPath>
+    </Reference>
     <Reference Include="log4net, Version=1.2.10.0, Culture=neutral, PublicKeyToken=1b44e1d426115821, processorArchitecture=MSIL" />
     <Reference Include="Rhino.DistributedHashTable">
       <HintPath>..\..\..\Lib\Rhino.DistributedHashTable.dll</HintPath>
