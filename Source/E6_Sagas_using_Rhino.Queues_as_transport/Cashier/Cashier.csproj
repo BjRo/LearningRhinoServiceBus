@@ -61,9 +61,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CashierBootStrapper.cs" />
-    <Compile Include="CashierSaga.cs" />
+    <Compile Include="NewOrderConsumer.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SubmitPaymentConsumer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="app.config" />

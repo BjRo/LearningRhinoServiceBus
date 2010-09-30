@@ -5,18 +5,14 @@ using Rhino.ServiceBus;
 
 namespace Cashier
 {
-    public class CashierSaga :
-        ConsumerOf<NewOrder>,
-        ConsumerOf<SubmitPayment>
+    public class NewOrderConsumer : ConsumerOf<NewOrder>
     {
         private readonly IServiceBus _bus;
 
-        public CashierSaga(IServiceBus bus)
+        public NewOrderConsumer(IServiceBus bus)
         {
             _bus = bus;
         }
-
-        #region InitiatedBy<NewOrder> Members
 
         public void Consume(NewOrder message)
         {
@@ -39,21 +35,5 @@ namespace Cashier
                 Amount = ((int)message.Size) * 1.25m
             });
         }
-
-        #endregion
-
-        #region Orchestrates<SubmitPayment> Members
-
-        public void Consume(SubmitPayment message)
-        {
-            Console.WriteLine("Cashier: got payment");
-            
-            _bus.Publish(new PaymentComplete
-            {
-                CorrelationId = message.CorrelationId
-            });
-        }
-
-        #endregion
     }
 }
