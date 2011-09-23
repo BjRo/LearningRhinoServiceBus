@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using Messages;
 using Rhino.ServiceBus;
 using Rhino.ServiceBus.Hosting;
@@ -19,7 +18,7 @@ namespace Client
             Console.WriteLine("Client 1: Hit enter to send message");
             Console.ReadLine();
 
-            var bus = host.Container.Resolve<IServiceBus>();
+            var bus = host.Bus as IServiceBus;
 
             bus.Send(new HelloWorldMessage
             {

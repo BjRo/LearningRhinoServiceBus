@@ -41,7 +41,7 @@ namespace DevelopmentEnvironment
 
             customerHost.Start<CustomerBootStrapper>();
 
-            var bus = customerHost.Container.Resolve<IServiceBus>();
+            var bus = customerHost.Bus as IServiceBus;
 
             var customer = new CustomerController(bus)
             {

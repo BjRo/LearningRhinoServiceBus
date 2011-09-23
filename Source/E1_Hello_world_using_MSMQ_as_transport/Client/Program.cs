@@ -16,7 +16,7 @@ namespace Client
             var host = new DefaultHost();
             host.Start<ClientBootStrapper>();
 
-            var bus = host.Container.Resolve<IServiceBus>();
+            var bus = host.Bus as IServiceBus;
 
             Console.WriteLine("Hit enter to send message");
             Console.ReadLine();

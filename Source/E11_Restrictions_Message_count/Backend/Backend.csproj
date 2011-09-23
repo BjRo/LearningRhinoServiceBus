@@ -53,6 +53,9 @@
     <Reference Include="Rhino.ServiceBus">
       <HintPath>..\..\..\Lib\Rhino.ServiceBus.dll</HintPath>
     </Reference>
+    <Reference Include="Rhino.ServiceBus.Castle">
+      <HintPath>..\..\..\Lib\Rhino.ServiceBus.Castle.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -82,6 +85,9 @@
       <Project>{AFC34668-563D-42A6-AA79-BDDF87EE483F}</Project>
       <Name>Utils</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

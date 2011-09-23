@@ -45,12 +45,6 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\Lib\Esent.Interop.dll</HintPath>
     </Reference>
-    <Reference Include="Rhino.DistributedHashTable">
-      <HintPath>..\..\..\Lib\Rhino.DistributedHashTable.dll</HintPath>
-    </Reference>
-    <Reference Include="Rhino.DistributedHashTable.Client">
-      <HintPath>..\..\..\Lib\Rhino.DistributedHashTable.Client.dll</HintPath>
-    </Reference>
     <Reference Include="Rhino.PersistentHashTable">
       <HintPath>..\..\..\Lib\Rhino.PersistentHashTable.dll</HintPath>
     </Reference>
@@ -59,6 +53,9 @@
     </Reference>
     <Reference Include="Rhino.ServiceBus">
       <HintPath>..\..\..\Lib\Rhino.ServiceBus.dll</HintPath>
+    </Reference>
+    <Reference Include="Rhino.ServiceBus.Castle">
+      <HintPath>..\..\..\Lib\Rhino.ServiceBus.Castle.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />

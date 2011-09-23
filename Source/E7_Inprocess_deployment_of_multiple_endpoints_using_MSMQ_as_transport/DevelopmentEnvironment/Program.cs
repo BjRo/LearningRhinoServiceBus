@@ -36,7 +36,7 @@ namespace DevelopmentEnvironment
                 .Receive("Messages.Barista", "msmq://localhost/LearningRhinoESB.E7.Barista"));
             customerHost.Start<CustomerBootStrapper>();
 
-            var bus = customerHost.Container.Resolve<IServiceBus>();
+            var bus = customerHost.Bus as IServiceBus;
 
             var customer = new CustomerController(bus)
             {
