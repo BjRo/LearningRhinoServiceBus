@@ -1,8 +1,8 @@
-using Rhino.ServiceBus.Hosting;
+using Rhino.ServiceBus.Castle;
 
 namespace Client2
 {
-    public class Client2BootStrapper : AbstractBootStrapper
+    public class Client2BootStrapper : CastleBootStrapper
     {
     }
 }
