@@ -19,7 +19,7 @@ namespace Customer
             Console.WriteLine("Ayende: Visiting Starbucks ...");
             Console.ReadLine();
 
-            var bus = host.Container.Resolve<IServiceBus>();
+            var bus = host.Bus as IServiceBus;
 
             var customer = new CustomerController(bus)
             {

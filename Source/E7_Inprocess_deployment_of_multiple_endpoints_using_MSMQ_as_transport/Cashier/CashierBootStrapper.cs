@@ -1,8 +1,8 @@
-using Rhino.ServiceBus.Hosting;
+using Rhino.ServiceBus.Castle;
 
 namespace Cashier
 {
-    public class CashierBootStrapper : AbstractBootStrapper
+    public class CashierBootStrapper : CastleBootStrapper
     {
     }
 }

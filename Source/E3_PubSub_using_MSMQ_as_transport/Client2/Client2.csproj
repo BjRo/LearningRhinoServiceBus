@@ -43,6 +43,9 @@
     <Reference Include="Rhino.ServiceBus">
       <HintPath>..\..\..\Lib\Rhino.ServiceBus.dll</HintPath>
     </Reference>
+    <Reference Include="Rhino.ServiceBus.Castle">
+      <HintPath>..\..\..\Lib\Rhino.ServiceBus.Castle.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />

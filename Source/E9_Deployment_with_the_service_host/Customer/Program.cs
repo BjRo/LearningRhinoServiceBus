@@ -17,17 +17,13 @@ namespace Customer
 
             var customerHost = new DefaultHost();
 
-            customerHost.BusConfiguration(c => c.Bus("msmq://localhost/LearningRhinoESB_E9_Customer")
-                .Receive("Messages.Cashier", "msmq://localhost/LearningRhinoESB_E9_Cashier")
-                .Receive("Messages.Barista", "msmq://localhost/LearningRhinoESB_E9_Barista"));
-            
             customerHost.Start<CustomerBootStrapper>();
 
             Console.WriteLine("Customer was started");
             Console.WriteLine("Waiting for order");
             Console.ReadLine();
 
-            var bus = customerHost.Container.Resolve<IServiceBus>();
+            var bus = customerHost.Bus as IServiceBus;
 
             var customer = new CustomerController(bus)
             {

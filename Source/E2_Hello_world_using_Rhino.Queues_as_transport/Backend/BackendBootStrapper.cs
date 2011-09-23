@@ -1,8 +1,8 @@
-using Rhino.ServiceBus.Hosting;
+using Rhino.ServiceBus.Castle;
 
 namespace Backend
 {
-    public class BackendBootStrapper : AbstractBootStrapper
+    public class BackendBootStrapper : CastleBootStrapper
     {
     }
 }
